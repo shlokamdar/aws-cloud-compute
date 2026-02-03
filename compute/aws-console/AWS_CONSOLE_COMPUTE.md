@@ -1,6 +1,6 @@
-# 🖥️ EC2 Compute Using AWS Console
+# EC2 Compute Using AWS Console
 
-## 🎯 Objective
+## Objective
 
 Learn to **launch and configure an Amazon EC2 instance** manually using the AWS Management Console. This hands-on guide covers all fundamental EC2 components with visual step-by-step instructions.
 
@@ -8,7 +8,7 @@ Learn to **launch and configure an Amazon EC2 instance** manually using the AWS 
 
 ---
 
-## ✅ Prerequisites
+## Prerequisites
 
 Before you begin, ensure you have:
 
@@ -18,7 +18,7 @@ Before you begin, ensure you have:
 
 ---
 
-## 📋 EC2 Instance Launch Procedure
+## EC2 Instance Launch Procedure
 
 ### Step 1: Access EC2 Dashboard
 
@@ -49,7 +49,7 @@ An AMI is a **pre-configured template** that contains:
 |-----|-------------|:---------:|
 | Amazon Linux 2023 | AWS-optimized, secure, stable | ✅ |
 | Ubuntu 22.04 LTS | Popular for development | ✅ |
-| Windows Server 2022 | For .NET applications | ⚠️ Partial |
+| Windows Server 2022 | For .NET applications | Partial |
 
 > **Tip**: Amazon Linux 2023 is optimized for AWS and receives long-term support.
 
@@ -76,7 +76,7 @@ The **instance type** determines the hardware specifications of your virtual ser
 | `t2.micro` | 1 | 1 GB | Basic testing, learning |
 | `t3.micro` | 2 | 1 GB | Light applications |
 
-> ⚠️ **Important**: `t2.micro` is Free Tier eligible for 750 hours/month in the first 12 months.
+> **Important**: `t2.micro` is Free Tier eligible for 750 hours/month in the first 12 months.
 
 ---
 
@@ -99,7 +99,7 @@ A **key pair** is essential for secure SSH access to your instance:
 2. **Download and save** the `.pem` or `.ppk` file immediately
 3. Store it in a secure location (you cannot download it again!)
 
-> 🔐 **Security**: Never share your private key file. Set file permissions to `chmod 400 key.pem` on Linux/Mac.
+> **Security**: Never share your private key file. Set file permissions to `chmod 400 key.pem` on Linux/Mac.
 
 ---
 
@@ -115,7 +115,7 @@ Network settings control **how your instance connects** to the internet and othe
 |---------|-------------------|---------|
 | **VPC** | Default VPC | Virtual Private Cloud for isolation |
 | **Subnet** | Default subnet | Network subdivision in an AZ |
-| **Auto-assign Public IP** | ✅ **Enable** | Required for internet/SSH access |
+| **Auto-assign Public IP** | **Enable** | Required for internet/SSH access |
 | **Security Group** | Create new or select existing | Firewall rules |
 
 **Security Group Rules** (for SSH access):
@@ -124,7 +124,7 @@ Network settings control **how your instance connects** to the internet and othe
 |------|----------|:----:|--------|-------------|
 | SSH | TCP | 22 | My IP (`x.x.x.x/32`) | Secure SSH access |
 
-> ⚠️ **Security Best Practice**: Never use `0.0.0.0/0` for SSH. Always restrict to your IP.
+> **Security Best Practice**: Never use `0.0.0.0/0` for SSH. Always restrict to your IP.
 
 ---
 
@@ -174,11 +174,11 @@ When you see the Amazon Linux banner and command prompt:
 [ec2-user@ip-172-31-xx-xx ~]$ 
 ```
 
-🎉 **Congratulations!** You've successfully launched and connected to your first EC2 instance!
+**Congratulations!** You've successfully launched and connected to your first EC2 instance!
 
 ---
 
-## ⚠️ Limitations of Manual Provisioning
+## Limitations of Manual Provisioning
 
 | Limitation | Impact |
 |------------|--------|
@@ -190,17 +190,17 @@ When you see the Amazon Linux banner and command prompt:
 
 ---
 
-## 📝 Conclusion
+## Conclusion
 
 Manual EC2 provisioning via the AWS Console is:
 
-✅ **Great for**: Learning, experimentation, quick one-off tasks
+**Great for**: Learning, experimentation, quick one-off tasks
 
-❌ **Not suitable for**: Production environments, team collaboration, repeatable deployments
+**Not suitable for**: Production environments, team collaboration, repeatable deployments
 
 ---
 
-## ➡️ Next Steps
+## Next Steps
 
 Ready to automate? Continue with:
 
@@ -209,7 +209,7 @@ Ready to automate? Continue with:
 
 ---
 
-## 🧹 Cleanup (Important!)
+##  Cleanup (Important!)
 
 To avoid charges, remember to **terminate your instance** when done:
 
